@@ -1,4 +1,5 @@
 from Leccion1.LessonOneExerOne import *
+from Leccion2.LessonTwoExerTwo import *
 
 
 def main():
@@ -24,9 +25,9 @@ def main():
     elif Valor == 10:
         ConcaTotal()
     elif Valor == 11:
-        pass
+        Potencia()
     else: 
-        Print('Erro Valor no Encontrado')
+        print('Erro Valor no Encontrado')
 
 if __name__ == '__main__':
     main()
