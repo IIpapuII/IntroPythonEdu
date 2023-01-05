@@ -26,6 +26,8 @@ def main():
         ConcaTotal()
     elif Valor == 11:
         Potencia()
+    elif Valor == 12:
+        WholeNumber()
     else: 
         print('Erro Valor no Encontrado')
 
