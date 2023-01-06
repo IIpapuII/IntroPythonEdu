@@ -28,6 +28,13 @@ def main():
         Potencia()
     elif Valor == 12:
         WholeNumber()
+    elif Valor == 13:
+        LastDigit()
+    elif Valor == 14:
+        SumaTwoDigit()
+    elif Valor == 15:
+        PenultimateDigitPower()
+
     else: 
         print('Erro Valor no Encontrado')
 
