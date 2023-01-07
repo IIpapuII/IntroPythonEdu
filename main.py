@@ -34,7 +34,16 @@ def main():
         SumaTwoDigit()
     elif Valor == 15:
         PenultimateDigitPower()
-
+    elif Valor == 16:
+        remainderofdivision()
+    elif Valor == 17: 
+        addLastDigit()
+    elif Valor == 18:
+        sumThreDigit()
+    elif Valor == 19:
+        chainEquals()
+    elif Valor == 20: 
+        sumComplex()
     else: 
         print('Erro Valor no Encontrado')
 
