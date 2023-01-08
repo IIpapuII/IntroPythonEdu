@@ -1,5 +1,6 @@
 from Leccion1.LessonOneExerOne import *
 from Leccion2.LessonTwoExerTwo import *
+from Leccion3.LessonThre import *
 
 
 def main():
@@ -44,6 +45,14 @@ def main():
         chainEquals()
     elif Valor == 20: 
         sumComplex()
+    elif Valor == 21:
+        NumerPositiveFour()
+    elif Valor == 22:
+        oddNumber()
+    elif Valor == 23:
+        evenNumber()
+    elif Valor == 24: 
+        lastOddDigit()
     else: 
         print('Erro Valor no Encontrado')
 
