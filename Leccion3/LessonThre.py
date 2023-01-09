@@ -37,3 +37,10 @@ def lastOddDigit():
         print(f'El ultimo digito es impar : {number%10}')
     else:
         print('El ultimo digito no cumple la condicion')
+
+""" 
+25. construir un programa que lea un numero entero y determine si sus dos ultimos digitos iguales. 
+
+"""
+def numberSame():
+    pass
