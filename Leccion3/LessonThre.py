@@ -43,4 +43,18 @@ def lastOddDigit():
 
 """
 def numberSame():
-    pass
+    number = int(input("Ingrese un numero para validar: "))
+    if (number %10) == int((number%100)/10):
+        print('El numero ingresado sus dos ultimos digitos son iguales '+ str(number%10))
+    else:
+        print("El numero ingresado no cumple con la igualda")
+
+""" 
+26. Construir un programa que le a un numero entero y detemine si la suma de sus ultimos digitos son iguales.
+"""
+def SumLatestSeven():
+    number = int(input("Ingrese un numero para validar :"))
+    if ((number%10)+int((number%100)/10)) == 7:
+        print(f'La suma de los dos ultimos digidos dio 7 : {int(number%10)} :: {int((number%100)/10)}')
+    else:
+        print('El numero ingresado no  cumple con lo solicitado')

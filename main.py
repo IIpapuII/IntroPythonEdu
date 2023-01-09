@@ -53,6 +53,10 @@ def main():
         evenNumber()
     elif Valor == 24: 
         lastOddDigit()
+    elif Valor == 25:
+        numberSame()
+    elif Valor == 26:
+        SumLatestSeven()
     else: 
         print('Erro Valor no Encontrado')
 
