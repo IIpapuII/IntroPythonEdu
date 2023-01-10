@@ -57,6 +57,12 @@ def main():
         numberSame()
     elif Valor == 26:
         SumLatestSeven()
+    elif Valor == 27:
+        sumBiggerNumber()
+    elif Valor == 28:
+        BiggerNumber()
+    elif Valor == 29:
+        numbeObbCouple()
     else: 
         print('Erro Valor no Encontrado')
 
