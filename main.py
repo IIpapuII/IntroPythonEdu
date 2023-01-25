@@ -1,6 +1,7 @@
 from Leccion1.LessonOneExerOne import *
 from Leccion2.LessonTwoExerTwo import *
 from Leccion3.LessonThre import *
+from Leccion4.Lessonfour import *
 
 
 def main():
@@ -63,6 +64,9 @@ def main():
         BiggerNumber()
     elif Valor == 29:
         numbeObbCouple()
+    elif Valor == 30:
+        number =  [20,21,30,41,50,51,201]
+        NumberArrayOne(number)
     else: 
         print('Erro Valor no Encontrado')
 
