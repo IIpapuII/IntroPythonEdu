@@ -67,6 +67,10 @@ def main():
     elif Valor == 30:
         number =  [20,21,30,41,50,51,201]
         NumberArrayOne(number)
+    elif Valor == 31:
+        print_years()
+    elif Valor == 32:
+        print_people_table()
     else: 
         print('Erro Valor no Encontrado')
 
