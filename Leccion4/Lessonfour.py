@@ -51,9 +51,79 @@ def print_people_table():
     print(f'¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯')
 
 
+''' 
+34. Leer una cadena de caracteres y mostrarla verticalmente.
+'''
+def vertical_text():
+    pass
 
+'''
+35. Leer una cadena y derterminar cuantas veces dicha cadena  contiene
+la letra A en mayuscula.
 
+'''
+def letter_repeater():
+    pass
 
+'''
+36. contruir un programa en python que calcule la suma de todos los numeros 
+comprendidos entre 1 y 1000.
+
+'''
+def sum_thousand():
+    pass
+
+'''
+37. Mostrar los multiplos de 5 comprendidos en 13 y 48
+
+'''
+def number_multiples():
+    pass
+
+'''
+38. Mostrar los numeros entre 10 y 31 avanzando de 6 en.
+'''
+def advanced_by_six():
+    pass
+
+'''
+39. Mostrar los nombres completos de los meses y al frente la 
+la cantidad  de letras que tiene cada nombre.
+'''
+def number_months():
+    pass
+
+'''
+40. Mostrar  los entreos comprendidos entre 1 y 30 exeptuando los
+multiplos de 3.
+'''
+def multiples_of_three():
+    pass
+
+'''
+41. Mostrar los numeros  pares comprendios en 1  y 20. Al final
+mostrar las suma de dichos numeros pares.
+'''
+def add_pairs():
+    pass
+
+'''
+42. Leer una frese y derteminar cuantas vocales tiene.
+'''
+def sum_vowels():
+    pass
+
+'''
+43. Leer una frese y determinar  cuantas palabras tiene.
+'''
+def add_words():
+    pass
+
+'''
+44. Leer una palabra  y determinar  cuantas silabas simples tiene.
+'''
+def add_syllables():
+    pass
 
 
 
