@@ -55,7 +55,9 @@ def print_people_table():
 34. Leer una cadena de caracteres y mostrarla verticalmente.
 '''
 def vertical_text():
-    pass
+    text= input("Ingrese el texto a volver vertical: ")
+    for i in text:
+        print(i)
 
 '''
 35. Leer una cadena y derterminar cuantas veces dicha cadena  contiene
@@ -63,42 +65,59 @@ la letra A en mayuscula.
 
 '''
 def letter_repeater():
-    pass
-
+    text = input('Ingrese texto: ')
+    count = 0
+    for i in text:
+        if i == 'A':
+            count += 1
+    print('Cantidad total de A => {}'.format(count))    
 '''
 36. contruir un programa en python que calcule la suma de todos los numeros 
 comprendidos entre 1 y 1000.
 
 '''
 def sum_thousand():
-    pass
-
+    count=0
+    for i in range(1000):
+        count = count + i
+    print('Suma de valores hasta 1000 => {}'.format(count))
 '''
 37. Mostrar los multiplos de 5 comprendidos en 13 y 48
 
 '''
 def number_multiples():
-    pass
-
+    for i in range(13,48):
+        if i % 5 == 0:
+            print('Valor mulplipo de 5 en un rango => {}'.format(i))
+    #forma usando list comprehension
+    count = [i for i in range(13,48) if i%5 == 0]
+    print(count)
 '''
 38. Mostrar los numeros entre 10 y 31 avanzando de 6 en.
 '''
 def advanced_by_six():
-    pass
+    for i in range(10,31,6):
+        print(f'salida => {i}')
 
 '''
 39. Mostrar los nombres completos de los meses y al frente la 
 la cantidad  de letras que tiene cada nombre.
 '''
 def number_months():
-    pass
-
+    data = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre']
+    for i in data:
+        print(f'{i} => {len(i)}')
 '''
-40. Mostrar  los entreos comprendidos entre 1 y 30 exeptuando los
+40. Mostrar  los enteros comprendidos entre 1 y 30 exeptuando los
 multiplos de 3.
 '''
 def multiples_of_three():
-    pass
+    for i in range(1,30):
+        if i % 3 != 0:
+            print(f'Entero fuera de 3 => {i}')
+    
+    #forma de list comprehension
+    print([i for i in range(1,30) if i%3 != 0])
 
 '''
 41. Mostrar los numeros  pares comprendios en 1  y 20. Al final

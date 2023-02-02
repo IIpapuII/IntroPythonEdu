@@ -71,6 +71,20 @@ def main():
         print_years()
     elif Valor == 32:
         print_people_table()
+    elif Valor == 33:
+        vertical_text()
+    elif Valor == 34:
+        letter_repeater()
+    elif Valor == 35:
+        sum_thousand()
+    elif Valor == 36:
+        number_multiples()
+    elif Valor == 37:
+        advanced_by_six()
+    elif Valor == 38:
+        number_months()
+    elif Valor == 39:
+        multiples_of_three()
     else: 
         print('Erro Valor no Encontrado')
 
