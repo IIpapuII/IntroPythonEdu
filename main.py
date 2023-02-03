@@ -85,6 +85,8 @@ def main():
         number_months()
     elif Valor == 39:
         multiples_of_three()
+    elif Valor == 40:
+        add_pairs()
     else: 
         print('Erro Valor no Encontrado')
 

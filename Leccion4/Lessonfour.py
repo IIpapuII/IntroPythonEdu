@@ -124,13 +124,20 @@ def multiples_of_three():
 mostrar las suma de dichos numeros pares.
 '''
 def add_pairs():
-    pass
+    for i in range(1,20):
+        if i % 2 == 0:
+            print('Numeros pares {i}'.format(i))
 
 '''
 42. Leer una frese y derteminar cuantas vocales tiene.
 '''
 def sum_vowels():
-    pass
+    count = 0
+    text = input('Ingrese texto: ')
+    for i in text.lower():
+        if i == 'a' or i == 'e' or i =='o' or i=='u' :
+            count =+ 1
+    print('Vocales Encontradas => ' + count)
 
 '''
 43. Leer una frese y determinar  cuantas palabras tiene.
