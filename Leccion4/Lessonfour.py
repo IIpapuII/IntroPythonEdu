@@ -136,21 +136,29 @@ def sum_vowels():
     text = input('Ingrese texto: ')
     for i in text.lower():
         if i == 'a' or i == 'e' or i =='o' or i=='u' :
-            count =+ 1
-    print('Vocales Encontradas => ' + count)
+            count += 1
+    print('Vocales Encontradas => ' + str(count))
 
 '''
 43. Leer una frese y determinar  cuantas palabras tiene.
 '''
 def add_words():
-    pass
-
+    text = input('Ingrese un texto a contar: ')
+    count =0
+    for i in text:
+        if i ==' ':
+            count += 1
+    print('Valor total => {}'.format(count+1))
 '''
 44. Leer una palabra  y determinar  cuantas silabas simples tiene.
 '''
 def add_syllables():
-    pass
-
+    text = input('Ingrese texto: ').lower()
+    count =0 
+    for i in range(len(text)):
+        if text[i] in 'aeiou' and text[i-1] in 'aeioumstlrpncdvfbjñghqykxw':
+            count += 1
+    print('cantidad de silabas => {}'.format(count))
 
 
 

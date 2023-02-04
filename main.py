@@ -87,6 +87,12 @@ def main():
         multiples_of_three()
     elif Valor == 40:
         add_pairs()
+    elif Valor ==41:
+        sum_vowels()
+    elif Valor ==42:
+        add_words()
+    elif Valor == 43:
+        add_syllables()
     else: 
         print('Erro Valor no Encontrado')
 
