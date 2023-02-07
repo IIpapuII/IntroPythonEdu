@@ -2,6 +2,8 @@ from Leccion1.LessonOneExerOne import *
 from Leccion2.LessonTwoExerTwo import *
 from Leccion3.LessonThre import *
 from Leccion4.Lessonfour import *
+from Lesson5.Lesson5 import *
+
 
 
 def main():
@@ -93,6 +95,22 @@ def main():
         add_words()
     elif Valor == 43:
         add_syllables()
+    elif Valor == 44:
+        name = input ('Enter your name: ')
+        print_name(name,5)
+    elif Valor == 45:
+        text = input('Enter text: ')
+        amount = int(input('Enter amount: '))
+        repeat_text(text,amount)
+    elif Valor == 46: 
+        list_numbers = [2,56,543,45,234,65,4234,675]
+        sum_of_number(list_numbers)
+    elif Valor == 47:
+        list_numbers = [4,2,6,2,6,4,2,1]
+        average_pairs(list_numbers)
+    elif Valor == 48:
+        list_numbers = [3,543,6,3,32,6,32,456,1,54]
+        average_data(list_numbers)
     else: 
         print('Erro Valor no Encontrado')
 
