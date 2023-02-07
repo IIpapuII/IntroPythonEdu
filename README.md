@@ -39,3 +39,8 @@ Por lo que la estructura del libro esta divida en lecciones donde se presente re
 Cada una de las lecciónes propuesta puede contar con una serie de ejercicios a nivel practico que permite mejorar las habilidades  y la compreción de cada uno de los temas para compreder lo que el ejercici esta solicitando de estara realizando comentarios de varias lineas para dar la exlicación de los diferentes talleres propuestos en cada unas de las lecciones .
 
 Como proyecto final se presente tener un menú que visualice toda la información de los diferentes ejercicios por lo desde los más simples van a estar encapsuldos en modulos o se trabajara por diferentes versciones de acuerdo al desarrollo de la ultima actividad como reto final para ver si se logro dominar todos los conceptos abordados en el libro.
+
+# Mini proyectos
+En esta parte  se agregan proyectos mas completos que utilizan  varias de las lecciones para poder desarrollarlos de esta forma mejorar, el manejo del lenguaje. 
+
+-Proyecto 1. Piedra, Papel o Tijera 
