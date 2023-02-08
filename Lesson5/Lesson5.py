@@ -43,33 +43,42 @@ def average_data(list_numbers):
 50. Construir una funcion que reciba (como parametros) una lista de cadenas
 y retorne la suma de la cantidad de letras de cada cadena
 '''
-def add_string():
+def add_string(txt):
     print('Se inoran en la cuenta de la cadena los espacios')
+    for i in txt.split(' '):
+        print (f'largo del string => {i} => {len(i)}')
 
 '''
 51. Construir una funcion que reciba dos datos enteros (como parametros ) 
 y retorne el dato mayor
 '''
-def greater_data():
-    pass
+def greater_data(a ,b):
+    if a > b:
+        print(f'Dato mayor: {a}')
+    else:
+        print(f'Dato mayor: {b}')
 
 '''
 52. Construir una funcion que reciba un valor entero (como parametro)
  y muestre la tabla de multiplicar de dicho valor recibido.
 '''
-def multiplication_table():
-    pass
+def multiplication_table(a):
+    for i in range(1,11):
+        print(f'{i}X{a} => {i*a}')
 
 '''
 53. Construir una funcion que reciba un valor entero (como parametro) y determine si su ultimo digito es 4
 
 '''
-def last_digit_four():
-    pass
+def last_digit_four(d):
+    if d%10 ==4 :
+        print(f'Dato con 4 al final: {d}')
+    else:
+        print('El dato no cumple la condicion')
 
 '''
 54. Construir una funcion que reciba una lista de datos enteros (como parametro) y
 retorne la cantidad de valores de la lista que terminan en 4.
 '''
-def last_digit_list():
-    pass
+def last_digit_list(a):
+    print([i for i in a if i%10 == 4])

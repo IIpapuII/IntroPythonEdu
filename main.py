@@ -111,8 +111,25 @@ def main():
     elif Valor == 48:
         list_numbers = [3,543,6,3,32,6,32,456,1,54]
         average_data(list_numbers)
+    elif Valor == 49:
+        text = input('Enter text: ')
+        add_string(text)
+    elif Valor == 50:
+        number_one = (int(input('Enter number one: ')))
+        number_two = (int(input('Enter number two: ')))
+        greater_data(number_one , number_two)
+    elif Valor == 51:
+        number = int(input('Enter number: '))
+        multiplication_table(number)
+    elif Valor == 52:
+        number = int(input('Enter number: '))
+        last_digit_four(number)
+    elif Valor ==53:
+        numbers = [343,4534,523452,5444,245,65234]
+        last_digit_list(numbers)
     else: 
         print('Erro Valor no Encontrado')
+
 
 if __name__ == '__main__':
     main()
