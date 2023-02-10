@@ -3,7 +3,7 @@ from Leccion2.LessonTwoExerTwo import *
 from Leccion3.LessonThre import *
 from Leccion4.Lessonfour import *
 from Lesson5.Lesson5 import *
-
+from Lesson6.Lesson6 import *
 
 
 def main():
@@ -127,6 +127,12 @@ def main():
     elif Valor ==53:
         numbers = [343,4534,523452,5444,245,65234]
         last_digit_list(numbers)
+    elif Valor == 54:
+        number = int(input('Enter number: '))
+        data = number_multiples(number)
+        for i in data:
+            print(i)
+        print(list(data))
     else: 
         print('Erro Valor no Encontrado')
 
