@@ -15,9 +15,13 @@ def number_multiples(a):
 56. Constuir un programa que  muestre los numeros terminados en 3 comprendidos entre 1  y un
 tope dado.
 '''
-def number_printer_stop():
-    pass
-
+def number_printer_stop(a):
+    number 
+    for i in range(a):
+        if i%10 == 3:
+           number = yield i
+    for i in number:
+        print(number)
 '''
 57. Construir un programa que muestre los numeros cuyos  dos ultimos digitos sumen 4,
 en el rango comprendidos entre 1 un numero dado
