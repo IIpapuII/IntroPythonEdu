@@ -1,6 +1,7 @@
 import click
 import time
 import sys
+from src.logicGame import logic_game,Score
 @click.command()
 def view():
     logo = open('D:/Project_code/IntroPythonEdu/mini_projects/rock_paper_scissors/src/output.txt','r')
@@ -34,7 +35,7 @@ def init_game():
     
     control = click.getchar()
     if control == 'j':
-        click.echo('init game')
+        game()
     
     elif control == 'x':
         sys.exit()
@@ -43,4 +44,18 @@ def init_game():
         time.sleep(3)
         click.clear()
         view()
-        
+
+@click.command()
+def game():
+    click.clear()
+    click.echo(click.style("""
+    Inicio del juego                                             SCORE :: {}
+    __________________
+    Reglas de juego:
+    Preciona A para tirar piedra ->
+    Preciona S para tirar papel ->
+    Preciona D para tirar tijera ->
+
+    """.format(Score()),fg='blue'))
+    inser_game = click.getchar()
+    logic_game(inser_game)
