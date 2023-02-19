@@ -1,7 +1,7 @@
 import click
 import time
 import sys
-from src.logicGame import logic_game_user,Score
+from src.logicGame import logic_game_user, Score_user ,Score_machine
 @click.command()
 def view():
     logo = open('D:/Project_code/IntroPythonEdu/mini_projects/rock_paper_scissors/src/output.txt','r')
@@ -51,7 +51,7 @@ def init_game():
 def game():
     click.clear()
     click.echo(click.style("""
-    Inicio del juego                                             SCORE :: {}
+    Inicio del juego                                             SCORE :: {}   SCORE MACHINE :: {}
     __________________
     Reglas de juego:
     Preciona A para tirar piedra -> A
@@ -59,7 +59,7 @@ def game():
     Preciona D para tirar tijera -> D
     Preciona X para Salir del Game -> X
 
-    """.format(Score()),fg='blue'))
+    """.format(Score_user(),Score_machine()),fg='blue'))
     inser_game = click.getchar().upper()
     
     if inser_game == 'A' or inser_game == 'S' or inser_game =='D':
