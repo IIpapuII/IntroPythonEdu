@@ -1,6 +1,7 @@
 import click
 import time
 import sys
+import os, os.path
 from src.logicGame import logic_game_user, Score_user ,Score_machine
 @click.command()
 def view():
@@ -23,10 +24,16 @@ def view():
     JUGAR-> J
     SALIR-> X
     """)
+    logo.close()
     init_game()
-
+@click.command()
 def win_game():
-    pass
+    logo = open(os.path.dirname(os.path.abspath(__file__))+'\winGame.txt')
+    click.clear()
+    print(logo.read())
+    time.sleep(3)
+    game()
+    logo.close()
 
 def game_over():
     pass
