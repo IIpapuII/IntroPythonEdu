@@ -4,7 +4,7 @@ import random
 import src.interface
 punctuation_user = 0
 punctuation_machine =0
-
+import click
 
 
 def Score_user():
@@ -24,7 +24,7 @@ def logic_game_user(inser_data_game):
     global punctuation_machine
     value_machine = logic_machine_game()
     if  inser_data_game == value_machine:
-        print('Empate')
+        click.echo(click.style('-----Empate-----', fg='bright_blue'))
         time.sleep(2)
         src.interface.game()
     elif (inser_data_game == 'A' and value_machine== 'D'):
@@ -32,16 +32,10 @@ def logic_game_user(inser_data_game):
         src.interface.win_game()
     elif inser_data_game == 'S' and value_machine == 'A':
         punctuation_user += 1
-        print('Gana Usuario')
-        time.sleep(3)
-        src.interface.game()     
+        src.interface.win_game()    
     elif inser_data_game == 'D' and value_machine == 'S':
         punctuation_user += 1
-        print('Gana Usuario')
-        time.sleep(3)
-        src.interface.game()
+        src.interface.win_game()
     else:
         punctuation_machine += 1
-        print('Gana Maquina con: {}'.format(value_machine))
-        time.sleep(3)
-        src.interface.game()
+        src.interface.game_over()

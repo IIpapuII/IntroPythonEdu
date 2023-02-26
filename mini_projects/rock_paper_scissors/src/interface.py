@@ -36,7 +36,12 @@ def win_game():
     logo.close()
 
 def game_over():
-    pass
+    logo = open(os.path.dirname(os.path.abspath(__file__))+'\gameOver.txt')
+    click.clear()
+    print(logo.read())
+    time.sleep(3)
+    game()
+    logo.close()
 
 #control de inicio del Game
 def init_game():
