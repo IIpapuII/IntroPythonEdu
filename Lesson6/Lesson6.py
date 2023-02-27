@@ -35,9 +35,12 @@ en el rango comprendidos entre 1 un numero dado
 '''
 
 
-def sum_four_limit():
-    pass
-
+def sum_four_limit(a):
+    numero = 0
+    for i in range(a):
+        if i%10 + int((i%100)/10) == 4:
+            numero = yield i
+    return numero
 
 '''
 58. Constuir un programa que muestre los numeros cuyos dos ultimos digitos sean iguales,
