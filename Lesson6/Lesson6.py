@@ -48,8 +48,12 @@ en el rango comprendido entre 1 y un numero dado.
 '''
 
 
-def equal_number_end():
-    pass
+def equal_number_end(a):
+    numero = 0
+    for i in range(a):
+        if i%10 == int((i%100)/10):
+            numero = yield i
+    return numero
 
 
 '''

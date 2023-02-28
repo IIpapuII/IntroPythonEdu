@@ -135,8 +135,11 @@ def main():
         print(list(data))
     elif Valor == 55:
         number =  int(input('Enter number: '))
-        data = sum_four_limit(number)
-        
+        data = sum_four_limit(number)   
+        print(list(data))
+    elif Valor == 56:
+        number = int(input('Enter number: '))
+        data = equal_number_end(number)
         print(list(data))
     else: 
         print('Erro Valor no Encontrado')
