@@ -88,20 +88,14 @@ def print_number_odd(a):
 61. Constuir un programa que muentre los numero cuyos 2 ultimos digitos sean multiplos
 en el rango comprendido entre 1 y un numero dado.
 '''
-#para comprender la solucion que estoy realizando defino el numero mayor para ser dividido por el menor
 
+#Plante el ejercicio de otra forma pero tambies exlui las validaciones con ZeroDivicionError
 def print_number_multiples(a):
     number = 0
-    for i in range(a):
-        if i%10 != 0 and int((i%100)/100) != 0:
-            if i%10 < int((i%100)/10):
-                if i%10 / int((i%100)/10) == 0:
-                    number = yield i
-            else:
-                if int((i%100)/10) / i%10 ==0:
-                    number = yield i
-        else:
-            continue
+    for i in range(1,a):
+        if len(str(i))>2 and (i%100) != 0:
+            if  i % (i%100) == 0:
+                number = yield i
     return number
 
 '''
