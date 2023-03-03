@@ -141,6 +141,18 @@ def main():
         number = int(input('Enter number: '))
         data = equal_number_end(number)
         print(list(data))
+    elif Valor == 57:
+        number = int(input('Enter number: '))
+        data = sum_eight_limit(number)
+        print(list(data))
+    elif Valor == 58:
+        number = int(input('Enter Number: '))
+        data = print_number_odd(number)
+        print(list(data))
+    elif Valor == 59:
+        number = int(input('Enter number: '))
+        data = print_number_multiples(number)
+        print(list(data))
     else: 
         print('Erro Valor no Encontrado')
 

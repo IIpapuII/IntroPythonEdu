@@ -62,8 +62,12 @@ en el rago comprendido entre 1 y un numero dado.
 '''
 
 
-def sum_eight_limit():
-    pass
+def sum_eight_limit(a):
+    number = 0
+    for i in range(a):
+        if i%10 + int((i%100)/10) + int((i%1000)/100) == 8:
+            number = yield i
+    return number
 
 
 '''
@@ -72,19 +76,33 @@ rango comprendido entre 1 y un numero dado.
 '''
 
 
-def print_number_odd():
-    pass
+def print_number_odd(a):
+    number = 0
+    for i in range(a):
+        if len(str(i))== 2 and i%2 ==0:
+            number = yield i
+    return number
 
 
 '''
 61. Constuir un programa que muentre los numero cuyos 2 ultimos digitos sean multiplos
 en el rango comprendido entre 1 y un numero dado.
 '''
+#para comprender la solucion que estoy realizando defino el numero mayor para ser dividido por el menor
 
-
-def print_number_multiples():
-    pass
-
+def print_number_multiples(a):
+    number = 0
+    for i in range(a):
+        if i%10 != 0 and int((i%100)/100) != 0:
+            if i%10 < int((i%100)/10):
+                if i%10 / int((i%100)/10) == 0:
+                    number = yield i
+            else:
+                if int((i%100)/10) / i%10 ==0:
+                    number = yield i
+        else:
+            continue
+    return number
 
 '''
 62. Construir un progrma que muestre los numeros que comiencen por un digito escrito por el 
