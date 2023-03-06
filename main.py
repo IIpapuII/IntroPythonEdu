@@ -153,6 +153,19 @@ def main():
         number = int(input('Enter number: '))
         data = print_number_multiples(number)
         print(list(data))
+    elif Valor ==  57:
+        number_user = int(input('Enter number User '))
+        number = int(input('Enter number'))
+        data = number_range_principle(number, number_user)
+        print(list(data))
+    elif Valor == 58:
+        number = int(input("Enter number: "))
+        data = print_number_range(number)
+        print(list(number))
+    elif Valor == 59:
+        number = int(input('Enter number: '))
+        data = range_number_principle_multiple(number)
+        print(list(data)) 
     else: 
         print('Erro Valor no Encontrado')
 
