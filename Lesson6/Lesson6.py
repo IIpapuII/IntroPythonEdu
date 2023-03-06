@@ -99,13 +99,17 @@ def print_number_multiples(a):
     return number
 
 '''
-62. Construir un progrma que muestre los numeros que comiencen por un digito escrito por el 
+62. Construir un programa que muestre los numeros que comiencen por un digito escrito por el 
 usuario en el rango comprendido entre 1 y un numero dado.
 '''
 
 
-def number_range_principle():
-    pass
+def number_range_principle(a,b):
+    number = 0
+    for i in range(1,a):
+        if int(str(i)[0]) == a:
+            number = yield i
+    return number
 
 
 '''
@@ -114,8 +118,12 @@ digito sean iguales, en el rango comprendido entre 1 y un numero dado.
 '''
 
 
-def print_number_range():
-    pass
+def print_number_range(a):
+    number = 0
+    for i in range(a):
+        if i%10 == int(str(i)[0]):
+            number = yield i
+    return number
 
 
 '''
@@ -124,5 +132,9 @@ digito, en el rango comprendido entre 1 y un numero dado.
 '''
 
 
-def range_number_principle_multiple():
-    pass
+def range_number_principle_multiple(a):
+    number = 0
+    for i in range(a):
+        if (int(str(i)[0]) % i%10) == 0:
+            number =  yield i
+    return number
