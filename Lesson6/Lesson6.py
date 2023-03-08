@@ -104,10 +104,11 @@ usuario en el rango comprendido entre 1 y un numero dado.
 '''
 
 
-def number_range_principle(a,b):
+def number_range_principle(a:int, b:int):
     number = 0
     for i in range(1,a):
-        if int(str(i)[0]) == a:
+        data = str(i)
+        if int(data[0]) == b:
             number = yield i
     return number
 
@@ -121,7 +122,8 @@ digito sean iguales, en el rango comprendido entre 1 y un numero dado.
 def print_number_range(a):
     number = 0
     for i in range(a):
-        if i%10 == int(str(i)[0]):
+        data = str(i)
+        if i%10 == int(data[0]):
             number = yield i
     return number
 
@@ -135,6 +137,10 @@ digito, en el rango comprendido entre 1 y un numero dado.
 def range_number_principle_multiple(a):
     number = 0
     for i in range(a):
-        if (int(str(i)[0]) % i%10) == 0:
-            number =  yield i
+        data = str(i)
+        if i%10 != 0 and int(data[0]) != 0:
+            if (int(data[0]) % (i%10)) == 0:
+               number =  yield i
+        else:
+            continue
     return number
