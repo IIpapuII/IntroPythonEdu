@@ -14,7 +14,17 @@ se le quiere calcular
 el 1er numero a la potencia representada por el 2 numero
 
 """
+def raising_number():
+    number = int(input('Enter Number'))
+    exponent = int (input('Enter Exponent '))
 
+    try:
+        print(number**(exponent**2))
+    except:
+        print('valide Entradas para realizar la operacion matematiaca')
+
+
+    
 """ 
 66. Construir un programa que permita  leer una cadena y mostrar cuantos caracteres tiene.
 

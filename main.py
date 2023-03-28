@@ -4,7 +4,7 @@ from Leccion3.LessonThre import *
 from Leccion4.Lessonfour import *
 from Lesson5.Lesson5 import *
 from Lesson6.Lesson6 import *
-
+from Leccion7.Lesson7 import *
 
 def main():
     Valor=int(input('Ingrese el numero de ejecio A desarrollar: '))
@@ -166,6 +166,8 @@ def main():
         number = int(input('Enter number: '))
         data = range_number_principle_multiple(number)
         print(list(data)) 
+    elif Valor == 63:
+        raising_number()
     else: 
         print('Erro Valor no Encontrado')
 
