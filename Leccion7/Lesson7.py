@@ -23,8 +23,6 @@ def raising_number():
     except:
         print('valide Entradas para realizar la operacion matematiaca')
 
-
-    
 """ 
 66. Construir un programa que permita  leer una cadena y mostrar cuantos caracteres tiene.
 
