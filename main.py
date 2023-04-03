@@ -168,6 +168,9 @@ def main():
         print(list(data)) 
     elif Valor == 63:
         raising_number()
+    elif Valor == 64:
+        number = int(input('Enter number'))
+        print(sum_number_three(number))
     else: 
         print('Erro Valor no Encontrado')
 

@@ -2,13 +2,24 @@
 63. Construir un programa que permita leer un numero y calcular la suma de 
 sus 3 ultimos digitos
 """
+def sum_number_three(number):
+    try:
+        return number%10 + round((number%100)/10) + round((number%1000)/100)
+    except: 
+        print("Error encontrado")
 
 """ 
 64. Construir un programa que permita leer un numero y mostrar su raiz cuadrada
 (para calcular la raiz se calcula  usando math.sqrt) y acontinuacion el valor al cual
 se le quiere calcular
 """
-
+import math
+def number_sqrt():
+    number = int(input("Enter number "))
+    try:
+        return math.sqrt(number)
+    except:
+        print("Error encontrado al ejecutar la raiz")
 """ 
 65. Construir un programa que permita  leer dos numeros enteros  y calcular  el resultado de elevar
 el 1er numero a la potencia representada por el 2 numero
