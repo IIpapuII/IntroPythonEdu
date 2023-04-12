@@ -38,9 +38,18 @@ def raising_number():
 66. Construir un programa que permita  leer una cadena y mostrar cuantos caracteres tiene.
 
 """
+def chain_string_len():
+    chain_string = input("Enter string ")
+    try:
+        return len(chain_string)
+    except:
+        print("El valor ingresado es incorrecto para validar")
+
 """ 
 67. Construir un programa que permita leer una cadena y  mostrar cuantas palasbras tiene.
 """
+def count_string():
+    pass
 
 """
 68. Construir un programa que permita leer  una cadena y mostrar cuantas vocales tiene
