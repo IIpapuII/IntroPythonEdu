@@ -17,7 +17,7 @@ import math
 def number_sqrt():
     number = int(input("Enter number "))
     try:
-        return math.sqrt(number)
+        return  math.sqrt(number)
     except:
         print("Error encontrado al ejecutar la raiz")
 """ 
@@ -49,11 +49,19 @@ def chain_string_len():
 67. Construir un programa que permita leer una cadena y  mostrar cuantas palasbras tiene.
 """
 def count_string():
-    pass
+    phrase = input("Enter phrase: ")
+    try:
+        for i in phrase:
+            if i == ' ':
+                count = count + 1
+        return count
+    except:
+        print("Erro de ingreso de frase")
 
 """
 68. Construir un programa que permita leer  una cadena y mostrar cuantas vocales tiene
 """
+
 
 """ 
 69. Construir un programa que permita leer una cadena y mostrar cuantas veces contiene la letra A (mayuscula o minuscula)

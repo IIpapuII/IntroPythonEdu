@@ -171,6 +171,10 @@ def main():
     elif Valor == 64:
         number = int(input('Enter number'))
         print(sum_number_three(number))
+    elif Valor == 65:
+        print('Result: ',number_sqrt())
+    elif Valor == 66:
+        raising_number()
     else: 
         print('Erro Valor no Encontrado')
 
