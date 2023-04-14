@@ -175,6 +175,12 @@ def main():
         print('Result: ',number_sqrt())
     elif Valor == 66:
         raising_number()
+    elif Valor == 67:
+        chain_string_len()
+    elif Valor == 68:
+        count_string()
+    elif Valor == 69:
+        count_vocals()
     else: 
         print('Erro Valor no Encontrado')
 

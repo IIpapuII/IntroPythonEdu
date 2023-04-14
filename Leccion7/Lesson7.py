@@ -26,11 +26,11 @@ el 1er numero a la potencia representada por el 2 numero
 
 """
 def raising_number():
-    number = int(input('Enter Number'))
-    exponent = int (input('Enter Exponent '))
+    number = int(input('Enter Number: '))
+    exponent = int (input('Enter Exponent: '))
 
     try:
-        print(number**(exponent**2))
+        print('Result: ',number**(exponent**2))
     except:
         print('valide Entradas para realizar la operacion matematiaca')
 
@@ -41,7 +41,7 @@ def raising_number():
 def chain_string_len():
     chain_string = input("Enter string ")
     try:
-        return len(chain_string)
+        print('len of string ', len(chain_string))
     except:
         print("El valor ingresado es incorrecto para validar")
 
@@ -50,18 +50,28 @@ def chain_string_len():
 """
 def count_string():
     phrase = input("Enter phrase: ")
-    try:
-        for i in phrase:
-            if i == ' ':
-                count = count + 1
-        return count
-    except:
-        print("Erro de ingreso de frase")
+    count = 0
+    #try:
+    for i in phrase:
+        if i == ' ':
+            count = count + 1
+    print('Number of wrod: ', count)
+    #except:
+     #   print("Erro de ingreso de frase")
 
 """
 68. Construir un programa que permita leer  una cadena y mostrar cuantas vocales tiene
 """
-
+def count_vocals():
+    phrase = input("Enter string")
+    count = 0
+    try:
+        for i in phrase:
+            if i in 'aeiou':
+                count = count + 1
+        print("Number of Vocalds ", count)
+    except:
+        print("Error encontrado")
 
 """ 
 69. Construir un programa que permita leer una cadena y mostrar cuantas veces contiene la letra A (mayuscula o minuscula)
