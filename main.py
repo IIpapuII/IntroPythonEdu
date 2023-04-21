@@ -181,6 +181,14 @@ def main():
         count_string()
     elif Valor == 69:
         count_vocals()
+    elif Valor == 70:
+        count_letter_a()
+    elif Valor == 71:
+        search_user_letter()
+    elif Valor == 72:
+        number_devisor()
+    elif Valor == 73:
+        equal_number_of_lengths()
     else: 
         print('Erro Valor no Encontrado')
 

@@ -63,7 +63,7 @@ def count_string():
 68. Construir un programa que permita leer  una cadena y mostrar cuantas vocales tiene
 """
 def count_vocals():
-    phrase = input("Enter string")
+    phrase = input("Enter string: ")
     count = 0
     try:
         for i in phrase:
@@ -76,13 +76,53 @@ def count_vocals():
 """ 
 69. Construir un programa que permita leer una cadena y mostrar cuantas veces contiene la letra A (mayuscula o minuscula)
 """
+def count_letter_a():
+    sentence = input('Enter Sentence: ')
+    count = 0
+    try: 
+        for i in str(sentence.lower()):
+            if i in 'a':
+                count = count + 1
+        print('Number letter  a ', count)
+    except:
+        print('Bug found')
+
 """ 
 70. Construir un programa que permita leer una cadena y mostrar cuantas veces contiene una letra digitada por el usuario
 """
+def search_user_letter():
+    sentence = input('Enter Sentence: ')
+    user_letter = input('Enter letter a search ')
+    count = 0
+    try:
+        for i in str(sentence.lower()):
+            if i in str(user_letter.lower()):
+                count  = count + 1
+        print('Count letter: ', count)
+    except:
+        print('Bug found')
+
 """ 
 71. Construir un programa que permita leer un numero y mostrar el resultado  de dividirlo entre 4.
 
 """
+def number_devisor():
+    number = int(input('Enter number: '))
+    try:
+        print('Result of dividing: ', number/4)
+    except ZeroDivisionError as error:
+        print('Bug found', error)
 """ 
 72.  Constuir un programa que permita leer dos numeros enteros y determinar si tienen la misma cantidad de digitos. 
 """
+def equal_number_of_lengths():
+    numer_one = int(input('Enter number one: '))
+    number_two = int(input('Enter numer two: '))
+
+    try:
+        if len(str(numer_one)) == len(str(number_two)):
+            print('the tow numbers are equal in length')
+        else:
+            print('Different numbers')
+    except:
+        print('Different numbers ')
