@@ -17,7 +17,7 @@ class Vehicle:
 un objeto llamado CARRO
 
 """
-
+ 
 """
 77. Construir un programa python que declare una clase COMIDA y que instancie
 ub objeto llamado ARROZCONPOLLO.
