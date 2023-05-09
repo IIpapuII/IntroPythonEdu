@@ -5,7 +5,21 @@
 que instancie un objeto llamado INSECTO.
 """
 class Animal:
-    pass
+    name = 'ant'
+    size = "small"
+    color = "Green"
+    typeAnimal = "Insect"
+
+    def type_structure(self):
+        self.typeStructure = "invertebrate"
+        return self.typeStructure
+    
+    def family_animal(self, typeAnimal):
+        self.typeAnimal = typeAnimal
+        return self.typeAnimal
+
+
+    
 """
 75. Construir un programa python que declare una clase VEHICULO y que instancie
 un objeto llamado AVION.

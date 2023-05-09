@@ -5,6 +5,7 @@ from Leccion4.Lessonfour import *
 from Lesson5.Lesson5 import *
 from Lesson6.Lesson6 import *
 from Leccion7.Lesson7 import *
+from Leccion8.Lesson8 import *
 
 def main():
     Valor=int(input('Ingrese el numero de ejecio A desarrollar: '))
@@ -189,6 +190,14 @@ def main():
         number_devisor()
     elif Valor == 73:
         equal_number_of_lengths()
+    elif Valor == 74:
+        insecto = Animal()
+        print("Name= ", insecto.name)
+        print("Size=", insecto.size)
+        print("Color=", insecto.color)
+        print("Type Animal=", insecto.typeAnimal)
+        print("Type Structure=", insecto.type_structure())
+        print("Family Animal=", insecto.family_animal("Arthropoda"))
     else: 
         print('Erro Valor no Encontrado')
 
