@@ -198,6 +198,15 @@ def main():
         print("Type Animal=", insecto.typeAnimal)
         print("Type Structure=", insecto.type_structure())
         print("Family Animal=", insecto.family_animal("Arthropoda"))
+    elif Valor == 75:
+        airplane = Vehicle(color="red", model="boind", enrollment= 3331,  type_vehicle="Airplane")
+        print(airplane.get_model)
+        print(airplane.type_vehicle)
+        print(airplane.get_color)
+        print(airplane.enrollment)
+        print("Enrollment change")
+        airplane.enrollment = 356434
+        print(airplane.enrollment)
     else: 
         print('Erro Valor no Encontrado')
 

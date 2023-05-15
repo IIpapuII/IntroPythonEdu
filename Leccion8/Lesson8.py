@@ -24,8 +24,40 @@ class Animal:
 75. Construir un programa python que declare una clase VEHICULO y que instancie
 un objeto llamado AVION.
 """
-class Vehicle:
-    pass
+class Vehicle(object):
+    def __init__(self, color, model, enrollment, type_vehicle ): 
+        self.__color= color
+        self.__model= model
+        self.__enrollment= enrollment
+        self.__type_vehicle= type_vehicle
+
+    #management getter
+    @property
+    def get_color(self) -> str :
+        return self.__color
+    @property
+    def get_model(self) -> str:
+        return self.__model 
+    @property
+    def enrollment(self) -> int:
+        return self.__enrollment
+    @property
+    def type_vehicle(self) -> str:
+        return self.__type_vehicle
+    #management setter
+    @type_vehicle.setter
+    def type_vehicle(self, new_type) -> str:
+        print('New name vehicle type')
+        self.__type_vehicle = new_type
+
+    @enrollment.setter
+    def enrollment(self, new_enrollment)-> int:
+        print("New Enrollment vehicle")
+        self.__enrollment = new_enrollment
+    
+    
+    
+
 """
 76. Construir un programa python de declares una clase VEHICULO y que instancie 
 un objeto llamado CARRO
