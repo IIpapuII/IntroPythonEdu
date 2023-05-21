@@ -207,6 +207,14 @@ def main():
         print("Enrollment change")
         airplane.enrollment = 356434
         print(airplane.enrollment)
+    elif Valor == 76:
+        carro()
+    elif Valor == 77:
+        foodRice = Food('Arroz', 'Arroz con pollo', 'Grande', 10000)
+        print(foodRice.name)
+        print(foodRice.type_eat)
+        print(foodRice.size)
+        print(foodRice.price)
     else: 
         print('Erro Valor no Encontrado')
 

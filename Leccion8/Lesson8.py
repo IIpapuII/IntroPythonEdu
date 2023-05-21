@@ -63,13 +63,45 @@ class Vehicle(object):
 un objeto llamado CARRO
 
 """
+#Instancias de la clase supperior que se estaba usando
+def carro():
+    car = Vehicle(color="blue", model="Audi", enrollment= 3331,  type_vehicle="Car")
+    print(car.get_model)
+    print(car.type_vehicle)
+    print(car.get_color)
+    print(car.enrollment)
+    print("Enrollment change")
+    car.enrollment = 356434
+    print(car.enrollment)
  
 """
 77. Construir un programa python que declare una clase COMIDA y que instancie
 ub objeto llamado ARROZCONPOLLO.
 """
 class Food:
-    pass
+    def __init__(self,type_eat, name, size, price):
+        self.__type_eat : str = type_eat
+        self.__name: str = name
+        self.__size: str = size
+        self.__price: int = price
+    
+    #management getter
+    @property
+    def type_eat(self) -> str:
+        return self.__type_eat
+    
+    @property 
+    def name(self) -> str:
+        return self.__name
+    
+    @property
+    def size(self)-> str:
+        return self.__size
+    
+    @property
+    def price(self)-> int:
+        return self.__price
+   
 """
 78. Construir un programa python que declare una clase ARBOL y que instancie un 
 objeto llamado CEDRO.
