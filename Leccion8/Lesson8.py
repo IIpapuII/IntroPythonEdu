@@ -127,13 +127,30 @@ class Tree:
 objeto llamado NOVELA.
 """
 class Book:
-    pass
+    def __init__(self, size, weight, pages, registered, collection, price, name):
+        self.size = size
+        self.weight =  weight
+        self.pages = pages
+        self.registered = registered
+        self.collection = collection
+        self.price = price
+        self.name  = name 
+    
+    def register(self) -> bool:
+        self.registered = True
+        return 'Registrado'
+    
+
 """
 80. Construir un programa python que declare una clase  PELICULA  y que instancie un
 objeto llamado  MONSTERSINC.
 """
 class Movie:
-    pass
+    def __init__(self,name, weight, gender, years):
+        self.name = name
+        self.weight = weight
+        self.gender = gender
+        self.years = years
 """
 81. Constuir un programa python que declare una clase DISPOSITIVO  y que instancie un
 objeto llamado PORTATIL.

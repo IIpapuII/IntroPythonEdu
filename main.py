@@ -220,6 +220,23 @@ def main():
         print(cedro.name)
         print(cedro.size)
         print(cedro.family)
+    elif Valor == 79:
+        novela = Book('14x12','300gms',345, False, 'NoAun', 500000,'fulltime')
+        print(novela.size)
+        print(novela.weight)
+        print(novela.pages)
+        print(novela.registered)
+        print(novela.collection)
+        print(novela.price)
+        print(novela.name)
+        print(novela.register())
+        print(novela.registered)
+    elif Valor == 80:
+        monster = Movie('monstersinc', '2GB','Fantacia','2015')
+        print(monster.name)
+        print(monster.weight)
+        print(monster.gender)
+        print(monster.years)
     else: 
         print('Erro Valor no Encontrado')
 
