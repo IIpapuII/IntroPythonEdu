@@ -107,7 +107,21 @@ class Food:
 objeto llamado CEDRO.
 """
 class Tree:
-    pass
+    def __init__(self, size:str, Name:str, family:str):
+        self.__size = size
+        self.__name = Name
+        self.__family = family
+    
+    @property
+    def size (self)-> str:
+        return self.__size
+    @property
+    def name(self)-> str:
+        return self.__name
+    @property
+    def family(self)-> str:
+        return self.__family
+ 
 """
 79. Construir un programa python que declare una clase LIBRO  y que intancie un 
 objeto llamado NOVELA.

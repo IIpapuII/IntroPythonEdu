@@ -215,6 +215,11 @@ def main():
         print(foodRice.type_eat)
         print(foodRice.size)
         print(foodRice.price)
+    elif Valor == 78:
+        cedro = Tree('Grander', 'Cedro','perenne')
+        print(cedro.name)
+        print(cedro.size)
+        print(cedro.family)
     else: 
         print('Erro Valor no Encontrado')
 
