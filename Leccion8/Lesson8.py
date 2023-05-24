@@ -156,7 +156,17 @@ class Movie:
 objeto llamado PORTATIL.
 """
 class Device:
-    pass
+    def __init__(self, name, series, weight, brand, model, switched_on):
+        self.name = name
+        self.series = series
+        self.weight  = weight
+        self.brand = brand
+        self.model = model
+        self.switched_on = False
+
+    def turn_on_device(self) -> bool:
+        self.switched_on = True
+        return 'turn on device-> True'
 """
 82. Construir un programa python que declare una clase SERVICIO y que instancie un 
 objeto llamado ENERGIA.

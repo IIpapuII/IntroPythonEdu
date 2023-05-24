@@ -237,6 +237,8 @@ def main():
         print(monster.weight)
         print(monster.gender)
         print(monster.years)
+    elif Valor == 81:
+        pass
     else: 
         print('Erro Valor no Encontrado')
 
