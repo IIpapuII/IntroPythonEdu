@@ -172,7 +172,17 @@ class Device:
 objeto llamado ENERGIA.
 """
 class Service:
-    pass
+    def __init__(self, money, watts, serie, name, user)
+        self.money = money
+        self.series = serie
+        self.watts = watts
+        self.name = name
+        self.user = user
+    
+    def pay_money(self) -> bool:
+        self.money = True
+        return "Energia Pay"
+
 """
 83. Construir un programa python que declare una clase EMPAQUE  y que instancie un
 objeto llamado CAJA.
