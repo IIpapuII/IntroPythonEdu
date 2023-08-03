@@ -113,6 +113,7 @@ def number_devisor():
     except ZeroDivisionError as error:
         print('Bug found', error)
 """ 
+
 72.  Constuir un programa que permita leer dos numeros enteros y determinar si tienen la misma cantidad de digitos. 
 """
 def equal_number_of_lengths():
