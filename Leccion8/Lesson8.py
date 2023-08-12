@@ -172,7 +172,7 @@ class Device:
 objeto llamado ENERGIA.
 """
 class Service:
-    def __init__(self, money, watts, serie, name, user)
+    def __init__(self, money, watts, serie, name, user):
         self.money = money
         self.series = serie
         self.watts = watts
@@ -188,4 +188,8 @@ class Service:
 objeto llamado CAJA.
 """
 class Paking: 
-    pass
+    def __init__(self, size, long, broad, high ) -> None:
+        self.size = size
+        self.long = long
+        self.broad = broad
+        self.high = high
