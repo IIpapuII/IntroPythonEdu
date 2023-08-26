@@ -8,7 +8,7 @@ por 1.4 que corresponde a su margen de ganancia.
 """
 
 class vehicles:
-    def __init__(self, sourceType:str, purchasePrice:int, vehiclePlaca:str, color:str, engine:int,power:int,torque:int, typeOfBox:str, ):
+    def __init__(self, sourceType:str, purchasePrice:int, vehiclePlaca:str, color:str, engine:float,power:float,torque:float, typeOfBox:str, ):
         self._wheels = 4 
         self._stalls = 5
         self._profitability = 1.4
@@ -38,9 +38,9 @@ class vehicles:
         purchasePrice = int(input("Ingrese el precio del compra del  vehiculo: "))
         vehiclePlaca = input("Ingrese la placa de registro del vehiculo: ")
         color = input("Ingrese el color del vehiculo: ")
-        engine = int(input("Ingrese el tipo de motor del vehiculo: "))
-        power = int(input("Ingrese la potencia del motor: "))
-        torque= int(input("Ingrese el torque que maneja el vehiculo: "))
+        engine = float(input("Ingrese el tipo de motor del vehiculo: "))
+        power = float(input("Ingrese la potencia del motor: "))
+        torque= float(input("Ingrese el torque que maneja el vehiculo: "))
 
         choiseTypeBox = int(input("Ingrese el tipo de caja que maneja el Vehiculo: 1- Automatica 2-Manual: "))
         if choiseTypeBox == 1:
@@ -50,7 +50,27 @@ class vehicles:
         else:
             print('Incorrect selection')
 
-        return sourseType, purchasePrice, vehiclePlaca, color, engine, power, torque, typeOfBox
+        return sourseType.upper(), purchasePrice, vehiclePlaca.upper(), color, engine, power, torque, typeOfBox.upper()
 
 def mainVahicles():
-    pass
+    dataVehicle = []
+    while True:
+        print("----------------------Consecionario--------------------------")
+        choise = int(input("""¿Desea registrar un nuevo Vehiculo? 
+                           1-SI 
+                           2-NO
+                           3-lISTAR REGISTROS 
+                           : """))
+        if choise == 2:
+            break
+        if choise == 1:
+            inputVehicle = vehicles(*vehicles.EnterData())
+            inputVehicle.calculPriceVehicle()
+            dataVehicle.append(inputVehicle)
+            print("Se ingreso el vehiculo de manera correcta")
+        if choise == 3:
+            for i, data in enumerate(dataVehicle, 1):
+                print("---------------------------------------------------------------------")
+                print(f'id: {i}, | result: {data.__dict__}')
+                
+mainVahicles()
