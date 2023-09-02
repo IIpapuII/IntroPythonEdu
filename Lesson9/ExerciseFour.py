@@ -33,3 +33,25 @@ class  Devices:
         purchasePrice = int(input("Ingrese el precio de compra: "))
         return typeOfDevices, ram, storage, purchasePrice
 
+def mainDevices():
+    dataDevices = []
+    while True:
+        print("----------------------Consecionario--------------------------")
+        choise = int(input("""¿Desea registrar un nuevo Equipo? 
+                           1-SI 
+                           2-NO
+                           3-lISTAR REGISTROS 
+                           : """))
+        if choise == 2:
+            break
+        if choise == 1:
+            inputDevices = Devices(*Devices.inputDataDevices())
+            inputDevices.calcSalesPrice()
+            dataDevices.append(inputDevices)
+            print("Se ingreso el vehiculo de manera correcta")
+        if choise == 3:
+            for i, data in enumerate(dataDevices, 1):
+                print("---------------------------------------------------------------------")
+                print(f'id: {i}, | result: {data.__dict__}')
+
+mainDevices()
