@@ -6,191 +6,192 @@ from Lesson5.Lesson5 import *
 from Lesson6.Lesson6 import *
 from Leccion7.Lesson7 import *
 from Leccion8.Lesson8 import *
+from Lesson9 import ExerciseFour,ExerciseOne,ExerciseThree,ExerciseTwo
 
 def main():
-    Valor=int(input('Ingrese el numero de ejecio A desarrollar: '))
-    if Valor == 1:
+    Value=int(input('Ingrese el numero de ejecio A desarrollar: '))
+    if Value == 1:
         FullName()
-    elif Valor == 2:
+    elif Value == 2:
         CentrarTexto()
-    elif Valor == 3:
+    elif Value == 3:
         Suma()
-    elif Valor == 4:
+    elif Value == 4:
         Producto()
-    elif Valor == 5:
+    elif Value == 5:
         Resta()
-    elif Valor == 6:
+    elif Value == 6:
         Divicion()
-    elif Valor == 7:
+    elif Value == 7:
         Concidencia()
-    elif Valor == 8:
+    elif Value == 8:
         concatenar()
-    elif Valor == 9:
+    elif Value == 9:
         concatenarEdad()
-    elif Valor == 10:
+    elif Value == 10:
         ConcaTotal()
-    elif Valor == 11:
+    elif Value == 11:
         Potencia()
-    elif Valor == 12:
+    elif Value == 12:
         WholeNumber()
-    elif Valor == 13:
+    elif Value == 13:
         LastDigit()
-    elif Valor == 14:
+    elif Value == 14:
         SumaTwoDigit()
-    elif Valor == 15:
+    elif Value == 15:
         PenultimateDigitPower()
-    elif Valor == 16:
+    elif Value == 16:
         remainderofdivision()
-    elif Valor == 17: 
+    elif Value == 17: 
         addLastDigit()
-    elif Valor == 18:
+    elif Value == 18:
         sumThreDigit()
-    elif Valor == 19:
+    elif Value == 19:
         chainEquals()
-    elif Valor == 20: 
+    elif Value == 20: 
         sumComplex()
-    elif Valor == 21:
+    elif Value == 21:
         NumerPositiveFour()
-    elif Valor == 22:
+    elif Value == 22:
         oddNumber()
-    elif Valor == 23:
+    elif Value == 23:
         evenNumber()
-    elif Valor == 24: 
+    elif Value == 24: 
         lastOddDigit()
-    elif Valor == 25:
+    elif Value == 25:
         numberSame()
-    elif Valor == 26:
+    elif Value == 26:
         SumLatestSeven()
-    elif Valor == 27:
+    elif Value == 27:
         sumBiggerNumber()
-    elif Valor == 28:
+    elif Value == 28:
         BiggerNumber()
-    elif Valor == 29:
+    elif Value == 29:
         numbeObbCouple()
-    elif Valor == 30:
+    elif Value == 30:
         number =  [20,21,30,41,50,51,201]
         NumberArrayOne(number)
-    elif Valor == 31:
+    elif Value == 31:
         print_years()
-    elif Valor == 32:
+    elif Value == 32:
         print_people_table()
-    elif Valor == 33:
+    elif Value == 33:
         vertical_text()
-    elif Valor == 34:
+    elif Value == 34:
         letter_repeater()
-    elif Valor == 35:
+    elif Value == 35:
         sum_thousand()
-    elif Valor == 36:
+    elif Value == 36:
         number_multiples()
-    elif Valor == 37:
+    elif Value == 37:
         advanced_by_six()
-    elif Valor == 38:
+    elif Value == 38:
         number_months()
-    elif Valor == 39:
+    elif Value == 39:
         multiples_of_three()
-    elif Valor == 40:
+    elif Value == 40:
         add_pairs()
-    elif Valor ==41:
+    elif Value ==41:
         sum_vowels()
-    elif Valor ==42:
+    elif Value ==42:
         add_words()
-    elif Valor == 43:
+    elif Value == 43:
         add_syllables()
-    elif Valor == 44:
+    elif Value == 44:
         name = input ('Enter your name: ')
         print_name(name,5)
-    elif Valor == 45:
+    elif Value == 45:
         text = input('Enter text: ')
         amount = int(input('Enter amount: '))
         repeat_text(text,amount)
-    elif Valor == 46: 
+    elif Value == 46: 
         list_numbers = [2,56,543,45,234,65,4234,675]
         sum_of_number(list_numbers)
-    elif Valor == 47:
+    elif Value == 47:
         list_numbers = [4,2,6,2,6,4,2,1]
         average_pairs(list_numbers)
-    elif Valor == 48:
+    elif Value == 48:
         list_numbers = [3,543,6,3,32,6,32,456,1,54]
         average_data(list_numbers)
-    elif Valor == 49:
+    elif Value == 49:
         text = input('Enter text: ')
         add_string(text)
-    elif Valor == 50:
+    elif Value == 50:
         number_one = (int(input('Enter number one: ')))
         number_two = (int(input('Enter number two: ')))
         greater_data(number_one , number_two)
-    elif Valor == 51:
+    elif Value == 51:
         number = int(input('Enter number: '))
         multiplication_table(number)
-    elif Valor == 52:
+    elif Value == 52:
         number = int(input('Enter number: '))
         last_digit_four(number)
-    elif Valor ==53:
+    elif Value ==53:
         numbers = [343,4534,523452,5444,245,65234]
         last_digit_list(numbers)
-    elif Valor == 54:
+    elif Value == 54:
         number = int(input('Enter number: '))
         data = number_multiples(number)
         for i in data:
             print(i)
         print(list(data))
-    elif Valor == 55:
+    elif Value == 55:
         number =  int(input('Enter number: '))
         data = sum_four_limit(number)   
         print(list(data))
-    elif Valor == 56:
+    elif Value == 56:
         number = int(input('Enter number: '))
         data = equal_number_end(number)
         print(list(data))
-    elif Valor == 57:
+    elif Value == 57:
         number = int(input('Enter number: '))
         data = sum_eight_limit(number)
         print(list(data))
-    elif Valor == 58:
+    elif Value == 58:
         number = int(input('Enter Number: '))
         data = print_number_odd(number)
         print(list(data))
-    elif Valor == 59:
+    elif Value == 59:
         number = int(input('Enter number: '))
         data = print_number_multiples(number)
         print(list(data))
-    elif Valor ==  60:
+    elif Value ==  60:
         number_user = int(input('Enter number User '))
         number = int(input('Enter number: '))
         data = number_range_principle(a=number, b=number_user)
         print(list(data))
-    elif Valor == 61:
+    elif Value == 61:
         number = int(input("Enter number: "))
         data = print_number_range(number)
         print(list(data))
-    elif Valor == 62:
+    elif Value == 62:
         number = int(input('Enter number: '))
         data = range_number_principle_multiple(number)
         print(list(data)) 
-    elif Valor == 63:
+    elif Value == 63:
         raising_number()
-    elif Valor == 64:
+    elif Value == 64:
         number = int(input('Enter number'))
         print(sum_number_three(number))
-    elif Valor == 65:
+    elif Value == 65:
         print('Result: ',number_sqrt())
-    elif Valor == 66:
+    elif Value == 66:
         raising_number()
-    elif Valor == 67:
+    elif Value == 67:
         chain_string_len()
-    elif Valor == 68:
+    elif Value == 68:
         count_string()
-    elif Valor == 69:
+    elif Value == 69:
         count_vocals()
-    elif Valor == 70:
+    elif Value == 70:
         count_letter_a()
-    elif Valor == 71:
+    elif Value == 71:
         search_user_letter()
-    elif Valor == 72:
+    elif Value == 72:
         number_devisor()
-    elif Valor == 73:
+    elif Value == 73:
         equal_number_of_lengths()
-    elif Valor == 74:
+    elif Value == 74:
         insecto = Animal()
         print("Name= ", insecto.name)
         print("Size=", insecto.size)
@@ -198,7 +199,7 @@ def main():
         print("Type Animal=", insecto.typeAnimal)
         print("Type Structure=", insecto.type_structure())
         print("Family Animal=", insecto.family_animal("Arthropoda"))
-    elif Valor == 75:
+    elif Value == 75:
         airplane = Vehicle(color="red", model="boind", enrollment= 3331,  type_vehicle="Airplane")
         print(airplane.get_model)
         print(airplane.type_vehicle)
@@ -207,20 +208,20 @@ def main():
         print("Enrollment change")
         airplane.enrollment = 356434
         print(airplane.enrollment)
-    elif Valor == 76:
+    elif Value == 76:
         carro()
-    elif Valor == 77:
+    elif Value == 77:
         foodRice = Food('Arroz', 'Arroz con pollo', 'Grande', 10000)
         print(foodRice.name)
         print(foodRice.type_eat)
         print(foodRice.size)
         print(foodRice.price)
-    elif Valor == 78:
+    elif Value == 78:
         cedro = Tree('Grander', 'Cedro','perenne')
         print(cedro.name)
         print(cedro.size)
         print(cedro.family)
-    elif Valor == 79:
+    elif Value == 79:
         novela = Book('14x12','300gms',345, False, 'NoAun', 500000,'fulltime')
         print(novela.size)
         print(novela.weight)
@@ -231,16 +232,32 @@ def main():
         print(novela.name)
         print(novela.register())
         print(novela.registered)
-    elif Valor == 80:
+    #Lesson 8 exercises
+    elif Value == 80:
         monster = Movie('monstersinc', '2GB','Fantacia','2015')
         print(monster.name)
         print(monster.weight)
         print(monster.gender)
         print(monster.years)
-    elif Valor == 81:
+    #Lesson 9 Exercises
+    elif Value == 81:
+        ExerciseOne.vetMain()
+    elif Value == 82:
+        ExerciseTwo.mainStationary()
+    elif Value == 83:
+        ExerciseThree.mainVahicles()
+    elif Value == 84:
+        ExerciseFour.mainDevices()
+    elif Value == 85:
+        pass
+    elif Value == 86:
+        pass
+    elif Value == 87:
+        pass
+    elif Value == 88:
         pass
     else: 
-        print('Erro Valor no Encontrado')
+        print('Erro Value no Encontrado')
 
 
 if __name__ == '__main__':

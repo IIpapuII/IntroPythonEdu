@@ -64,7 +64,7 @@ def mainStationary():
         choise = int(input("""¿Desea registrar un nuevo articulo? 
                            1-SI 
                            2-NO
-                           3-lISTAR REGISTROS 
+                           3-lISTAR REGISTROS
                            : """))
         if choise == 2:
             break
@@ -83,4 +83,3 @@ def mainStationary():
                 print(f"id:{id}| articulo:{data.typeOfArticle}: {data.__dict__}")
 
 
-mainStationary()

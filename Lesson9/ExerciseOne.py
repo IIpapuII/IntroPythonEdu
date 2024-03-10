@@ -44,7 +44,8 @@ def vetMain():
         choise = int(input("""¿Desea registrar un nuevo perro? 
                            1-SI 
                            2-NO
-                           3-lISTAR REGISTROS 
+                           3-lISTAR REGISTROS
+                           4-Salir 
                            : """))
         if choise == 2:
             break
@@ -57,6 +58,7 @@ def vetMain():
             for id, dog in enumerate(dogs, start =0):
                 print(f"| NumeroID:{id}: | | {dog.__dict__} |")
                 print("---------------------------------------")
+        if choise == 4:
+            break
 
 
-vetMain()

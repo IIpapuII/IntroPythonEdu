@@ -53,5 +53,3 @@ def mainDevices():
             for i, data in enumerate(dataDevices, 1):
                 print("---------------------------------------------------------------------")
                 print(f'id: {i}, | result: {data.__dict__}')
-
-mainDevices()

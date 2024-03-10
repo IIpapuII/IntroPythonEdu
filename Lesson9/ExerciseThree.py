@@ -73,4 +73,3 @@ def mainVahicles():
                 print("---------------------------------------------------------------------")
                 print(f'id: {i}, | result: {data.__dict__}')
                 
-mainVahicles()
