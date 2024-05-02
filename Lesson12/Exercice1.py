@@ -37,7 +37,6 @@ una subcadena por otra (Tambien leidas)
     else:
         print(f'Sudcadena no puede ser remplazada no existe {b}')
 
-print(replace_substring(a,b))
 """ 
 4. Construir un programa que lea auna cadena que contiene mayúsculas y  minúsculas  y que
 muestre una cadena con las mayúsculas convertidas en minusculas y las minúculas convertidas en
