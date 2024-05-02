@@ -38,23 +38,30 @@ una subcadena por otra (Tambien leidas)
         print(f'Sudcadena no puede ser remplazada no existe {b}')
 
 """ 
-4. Construir un programa que lea auna cadena que contiene mayúsculas y  minúsculas  y que
+4. Construir un programa que lea una cadena que contiene mayúsculas y  minúsculas  y que
 muestre una cadena con las mayúsculas convertidas en minusculas y las minúculas convertidas en
 mayúsculas .
 """
+def reverse_chain_type(a,b):
+    pass
 
 """ 
 5. Construir un programa que lea una cadena  y convierta su contenido en minúsculas.
 """
+def convert_to_lowercase(a):
+    pass
 
 """ 
 6. Construir un programa que lea una cadena  y convierta su contenido en mayúsculas.
 """
-
+def convert_to_uppercase(a):
+    pass
 """ 
 7. Construir  un programa que lea una cadena  y la muestre con su 1er carácter  convertido
 a mayúscula  y el resto a minúscula.
 """
+def convert_firt_capital_letter(a):
+    pass
 
 
 
