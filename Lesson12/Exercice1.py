@@ -47,6 +47,10 @@ def reverse_chain_type1(a):
     converText = a.swapcase()
     print(f'Converción: {converText}')
 
+#Segunda forma
+def reverse_chain_type2(a):
+    pass
+
 reverse_chain_type1(a)
 
 """ 
