@@ -42,8 +42,12 @@ una subcadena por otra (Tambien leidas)
 muestre una cadena con las mayúsculas convertidas en minusculas y las minúculas convertidas en
 mayúsculas .
 """
-def reverse_chain_type(a,b):
-    pass
+#Primera forma de resolver
+def reverse_chain_type1(a):
+    converText = a.swapcase()
+    print(f'Converción: {converText}')
+
+reverse_chain_type1(a)
 
 """ 
 5. Construir un programa que lea una cadena  y convierta su contenido en minúsculas.
