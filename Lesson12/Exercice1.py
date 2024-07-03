@@ -51,7 +51,7 @@ def reverse_chain_type1(a):
 def reverse_chain_type2(a):
     pass
 
-reverse_chain_type1(a)
+
 
 """ 
 5. Construir un programa que lea una cadena  y convierta su contenido en minúsculas.
