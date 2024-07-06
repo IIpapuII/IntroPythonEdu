@@ -49,27 +49,38 @@ def reverse_chain_type1(a):
 
 #Segunda forma
 def reverse_chain_type2(a):
-    pass
-
+    wordl = ""
+    for i in range(0,len(a)):
+        if a[i].islower() == True:
+            wordl = f'{wordl}{a[i].upper()}'
+        else:
+            wordl= f'{wordl}{a[i].lower()}'
+    print(f'Retorno de nueva frase: {wordl}')
 
 
 """ 
 5. Construir un programa que lea una cadena  y convierta su contenido en minúsculas.
 """
 def convert_to_lowercase(a):
-    pass
+    print(a.lower())
+    return a.lower()
 
 """ 
 6. Construir un programa que lea una cadena  y convierta su contenido en mayúsculas.
 """
 def convert_to_uppercase(a):
-    pass
+    print(a.upper())
+    return a.upper()
 """ 
 7. Construir  un programa que lea una cadena  y la muestre con su 1er carácter  convertido
 a mayúscula  y el resto a minúscula.
 """
 def convert_firt_capital_letter(a):
-    pass
+    world = a[0].upper()
+    print(f'Retorno de la nueva frase: {world}{a[1:].lower()}')
+
+convert_firt_capital_letter(a)
+
 
 
 
