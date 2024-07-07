@@ -79,8 +79,31 @@ def convert_firt_capital_letter(a):
     world = a[0].upper()
     print(f'Retorno de la nueva frase: {world}{a[1:].lower()}')
 
-convert_firt_capital_letter(a)
 
 
+""" 
+8. construir un programa que centre una cadena léida en 60 espacios en blanco
+"""
+def convert_center_chain(a):
+    print(a.center(60," "))
 
+convert_center_chain(a)
+
+""" 
+9. Construir un programa que cuente cuántas veces está una subcadena en una cadena, ambas léidas.
+"""
+
+"""
+10. Construir un programa que determine si una subcadena está dentro de una cadena, ambas léidas.
+"""
+
+""" 
+11. Construir un pograma que muestre en pantalla a partir de dónde se encuentra una subcadena dentro de una cadena
+, ambas leídas
+"""
+
+""" 
+12. Construir un programa que lea una cadena y determine si está compuesta sólo por caracteres alfabéticos, por 
+números y letras, sólo números, sólo minúsculas, sólo mayúsculas o sólo espacios en blanco.
+"""
 
