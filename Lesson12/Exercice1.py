@@ -87,23 +87,26 @@ def convert_firt_capital_letter(a):
 def convert_center_chain(a):
     print(a.center(60," "))
 
-convert_center_chain(a)
-
 """ 
 9. Construir un programa que cuente cuántas veces está una subcadena en una cadena, ambas léidas.
 """
+def count_subchains(a,b):
+    pass
 
 """
 10. Construir un programa que determine si una subcadena está dentro de una cadena, ambas léidas.
 """
-
+def within_substring(a,b):
+    pass
 """ 
 11. Construir un pograma que muestre en pantalla a partir de dónde se encuentra una subcadena dentro de una cadena
 , ambas leídas
 """
-
+def substring_index(a,b):
+    pass
 """ 
 12. Construir un programa que lea una cadena y determine si está compuesta sólo por caracteres alfabéticos, por 
 números y letras, sólo números, sólo minúsculas, sólo mayúsculas o sólo espacios en blanco.
 """
-
+def identify_data_type(a):
+    pass
