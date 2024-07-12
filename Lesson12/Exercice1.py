@@ -97,13 +97,19 @@ def count_subchains(a,b):
 10. Construir un programa que determine si una subcadena está dentro de una cadena, ambas léidas.
 """
 def within_substring(a,b):
-    pass
+    if (b in a) == True :
+        print(f'{b} esta dentro de {a}')
+    else:
+        print("No se encontro considencia")
+
 """ 
 11. Construir un pograma que muestre en pantalla a partir de dónde se encuentra una subcadena dentro de una cadena
 , ambas leídas
 """
 def substring_index(a,b):
-    pass
+    print(f'El valor de inicio de la subcadena se encuentra {a.find(b)}')
+
+substring_index(a,b)
 """ 
 12. Construir un programa que lea una cadena y determine si está compuesta sólo por caracteres alfabéticos, por 
 números y letras, sólo números, sólo minúsculas, sólo mayúsculas o sólo espacios en blanco.
