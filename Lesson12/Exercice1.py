@@ -115,4 +115,18 @@ def substring_index(a,b):
 números y letras, sólo números, sólo minúsculas, sólo mayúsculas o sólo espacios en blanco.
 """
 def identify_data_type(a):
-    pass
+    if a.isalpha():
+        return "La cadena está compuesta solo por caracteres alfabéticos."
+    elif a.isalnum():
+        return "La cadena está compuesta por números y letras."
+    elif a.isdigit():
+        return "La cadena está compuesta solo por números."
+    elif a.islower():
+        return "La cadena está compuesta solo por minúsculas."
+    elif a.isupper():
+        return "La cadena está compuesta solo por mayúsculas."
+    elif a.isspace():
+        return "La cadena está compuesta solo por espacios en blanco."
+    else:
+        return "La cadena no cumple con ninguna de las categorías específicas."
+
