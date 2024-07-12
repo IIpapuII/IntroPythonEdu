@@ -91,7 +91,8 @@ def convert_center_chain(a):
 9. Construir un programa que cuente cuántas veces está una subcadena en una cadena, ambas léidas.
 """
 def count_subchains(a,b):
-    pass
+    print(f'la Cantidad que se repite {b} es: {a.count(b)}')
+
 
 """
 10. Construir un programa que determine si una subcadena está dentro de una cadena, ambas léidas.
@@ -109,7 +110,6 @@ def within_substring(a,b):
 def substring_index(a,b):
     print(f'El valor de inicio de la subcadena se encuentra {a.find(b)}')
 
-substring_index(a,b)
 """ 
 12. Construir un programa que lea una cadena y determine si está compuesta sólo por caracteres alfabéticos, por 
 números y letras, sólo números, sólo minúsculas, sólo mayúsculas o sólo espacios en blanco.
